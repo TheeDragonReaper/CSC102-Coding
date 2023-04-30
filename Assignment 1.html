@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<!--Name - David Stutzman-->
+<html lang="en">
+<head>
+    <!--Title appears in the tab text space-->
+    <title>UAT Space Program</title>
+    <!--The link below is for the aesthetics of the page to be pulled from which is contained in a css file-->
+    <link  rel="stylesheet" type = "text/css" href = "first_css.css">
+    <!--The function used is a Do/While Loop that uses the variable that starts at 10 and reduces by 1 until the variable reaches 0 or as defined by the while aspect of the loop when the variable becomes less than 12-->
+    <script src = "codeLoop.js"></script>
+</head>
+    <center>
+        <body>
+        <!--Image appears in the top right corner because of no formatting and is first in the body chain-->
+        <img src="UATspaceLogo-2.jpg" />
+        <br>
+        <audio controls>
+            <source src = "saturn_radio_emissions.wav" type = "audio/mpeg">
+        </audio>
+        <!--First header will appear below the image above-->
+        <h1>UAT Space Program</h1>
+         <!--This line is for information pertaining to the login form function-->
+        <p id = "loginStatus">Status of Login</p>
+        <!--This is the form function for inputting the login information-->
+        <form id = "credSubmit" onsubmit="return false">
+            First Name: <input type = "text" id = "firstName"/>
+            <br>
+            Last Name: <input type = "text" id = "lastName"/>
+            <br>
+            Badge ID Number: <input type = "number" id = "badgeID"/>
+            <input type = "submit" onclick = "checkCredentials()"/>
+        </form>
+        <!--The number next to the h for the header determines the size of the text that appears-->
+        <!--Paragraph text sections are the meat of the text within an HTML page and can be separated by a break-->
+        <script>
+            alert("You have initiated the Blastoff Sequence")
+        </script>
+        <!--This button begins the countdown of the 10 second timer-->
+        <br>
+        <h3>Launch Sequence Control</h3>
+        <button id = "startButton" onclick="countDown()">Start</button>
+        <button id = "stopButton" onclick="countDont()">Stop</button>
+        <!--This gives the function for the countdown a location to display-->
+        <div id = "countdownTimer"></div>
+        <br>
+        <table class = "dataEntry" id = "dataEntry" border = "2" width = "85%">
+            <col style = "width: 20%";>
+            <col style = "width: 20%";>
+            <!--The <tr> tag is used for each row of the table-->
+            <tr style = "font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">
+                <!--The <th> tag is the header tag while the <td> is the data tag-->
+                <th>Data Type</th>
+                <th>Reading</th>
+            </tr>
+            <tr>
+                <!--I have all entries in the table set as header tags to make them centered within the table for a cleaner look-->
+                <th>Time Elapsed:</th>
+                <th>15 seconds</th>
+            </tr>
+            <tr>
+                <th>Latitude:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>Longitude:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>GPS Altitude:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>BMP Sensor Altitude:</th>
+                <th>30383.04</th>
+            </tr>
+            <tr>
+                <th>BMP Sensor Pressure:</th>
+                <th>2.34</th>
+            </tr>
+            <tr>
+                <th>BMP Sensor Temperature:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>Digital Sensor Temperature:</th>
+                <th>24.12</th>
+            </tr>
+            <tr>
+                <th>CSS Sensor Temperature:</th>
+                <th>25</th>
+            </tr>
+            <tr>
+                <th>CSS Sensor eCO2:</th>
+                <th>400</th>
+            </tr>
+            <tr>
+                <th>CSS Sensor TVOC:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>UV:</th>
+                <th>0</th>
+            </tr>
+            <tr>
+                <th>Accel X:</th>
+                <th>-0.87</th>
+            </tr>
+            <tr>
+                <th>Accel Y:</th>
+                <th>-0.02</th>
+            </tr>
+            <tr>
+                <th>Accel Z:</th>
+                <th>9.61</th>
+            </tr>
+            <tr>
+                <th>Magnetic X:</th>
+                <th>0.13</th>
+            </tr>
+            <tr>
+                <th>Magnetic Y:</th>
+                <th>0.57</th>
+            </tr>
+            <tr>
+                <th>Magnetix Z:</th>
+                <th>-0.24</th>
+            </tr>
+            <tr>
+                <th>Gyro X:</th>
+                <th>4.66</th>
+            </tr>
+            <tr>
+                <th>Gyro Y:</th>
+                <th>0.01</th>
+            </tr>
+            <tr>
+                <th>Gyro Z:</th>
+                <th>-0.4</th>
+            </tr>
+        </table>
+            
+        </body>
+    </center>
+</html>

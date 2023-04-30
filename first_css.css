@@ -1,0 +1,26 @@
+h1
+{color: rgb(139, 182, 98);
+font-style: italic;}
+
+h3
+{color:darkseagreen;}
+
+body
+{background-image: url(space.jpg);}
+
+button
+{background-color: rgb(171, 121, 55);
+font-style: italic;}
+
+form
+{color: white;}
+
+p
+{color: white;}
+
+div
+{color: white;}
+
+table
+{color: rgb(106, 126, 182);
+background-color: gold;}
